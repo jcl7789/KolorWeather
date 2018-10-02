@@ -1,0 +1,29 @@
+<resources>
+    <!-- String del Layout -->
+    <string name="app_name">Da Weather</string>
+    <string name="descripcionImagen">Clima actual</string>
+    <string name="grado">Grados</string>
+    <string name="ciudadUndefined">No disponible</string>
+    <string name="climaUndefined">Sin datos</string>
+    <string name="tempUndefined">0º</string>
+    <string name="probUndefined">0%</string>
+
+    <!-- String de la App -->
+    <string name="clear_day">Despejado</string>
+    <string name="clear_night">Noche despejada</string>
+    <string name="cloudy">Nuboso</string>
+    <string name="fog">Niebla</string>
+    <string name="partly_cloudy">Parcialmente nublado</string>
+    <string name="partly_cloudy_day">Parcialmente nublado</string>
+    <string name="partly_cloudy_night">Parcialmente nublada</string>
+    <string name="rain">Lluvia</string>
+    <string name="sleet">Chubasco</string>
+    <string name="snow">Nevada</string>
+    <string name="sunny">Soleado</string>
+    <string name="wind">Ventoso</string>
+    <string name="temperatura">Temperatura</string>
+    <string name="probabilidad">Probabilidad</string>
+    <string name="diario">Pronostico Diario</string>
+    <string name="horas">Pronostico por horas</string>
+
+</resources>
