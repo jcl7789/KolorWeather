@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Mis colores -->
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">@color/black</color>
+    <color name="colorPrimaryDark">@color/black</color>
+    <color name="colorAccent">@color/dark_green</color>
     <color name="fondo">#B4EDEB</color>
     <!-- Paleta de Colores Generica -->
     <color name="white">#ffffff</color>
@@ -132,7 +132,7 @@
     <color name="midnight_blue">#191970</color>
     <color name="aqua">#00FFFF</color>
     <color name="cyan">#00FFFF</color>
-    <color name="spring_green">#00FF7F</color>
+    <color name="spring_green">#00ff7f</color>
     <color name="lime">#00FF00</color>
     <color name="medium_spring_green">#00FA9A</color>
     <color name="dark_turquoise">#00CED1</color>
@@ -146,4 +146,5 @@
     <color name="dark_blue">#00008B</color>
     <color name="navy">#000080</color>
     <color name="black">#000000</color>
+    <color name="shadow_white">#0aeff7fe</color>
 </resources>
