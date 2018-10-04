@@ -34,7 +34,7 @@
     <string name="horas">Hourly weather</string>
 
     <!-- String de configuracion -->
-    <string name="locale">uk</string>
+    <string name="locale">us</string>
     <string name="units">auto</string>
 
     <!-- String de errores -->
