@@ -1,7 +1,7 @@
 package com.app.lj118011.kolorweather.UI
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
 import com.app.lj118011.kolorweather.R
 
 class HourlyWeatherActivity : AppCompatActivity() {
