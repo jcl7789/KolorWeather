@@ -1,7 +1,5 @@
 package com.app.lj118011.kolorweather.API
 
-import android.support.v4.view.ViewPropertyAnimatorListener
-
 val ACTUAL = "currently"
 val TEMPERATURA = "temperature"
 val PROBABILIDAD_PRECIP = "precipProbability"
