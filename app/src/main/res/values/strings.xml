@@ -14,6 +14,8 @@
     <!-- String del procedimiento-->
     <string name="tempPlaceholder">%dº C</string>
     <string name="probPlaceholder">%d %%</string>
+    <string name="temp_min">Min: %dº</string>
+    <string name="temp_max">Max: %dº</string>
 
     <!-- String de la App -->
     <string name="clear_day">Clear</string>
@@ -32,6 +34,13 @@
     <string name="probabilidad">Probability</string>
     <string name="diario">Dairy weather</string>
     <string name="horas">Hourly weather</string>
+    <string name="dia1">Monday</string>
+    <string name="dia2">Tuesday</string>
+    <string name="dia3">Wednesday</string>
+    <string name="dia4">Thursday</string>
+    <string name="dia5">Friday</string>
+    <string name="dia6">Saturday</string>
+    <string name="dia7">Sunday</string>
 
     <!-- String de configuracion -->
     <string name="locale">uk</string>
@@ -40,4 +49,5 @@
     <!-- String de errores -->
     <string name="error">Sorry an error occurred.</string>
     <string name="reintentar">Retry?</string>
+    <string name="Sin_Datos">Lo sentimos, no hay datos para mostrar</string>
 </resources>

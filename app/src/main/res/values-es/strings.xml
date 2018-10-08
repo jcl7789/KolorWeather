@@ -10,8 +10,10 @@
     <string name="probUndefined">0%</string>
 
     <!-- String del procedimiento-->
-    <string name="tempPlaceholder">%dº C</string>
-    <string name="probPlaceholder">%d %%</string>
+    <string name="tempPlaceholder">%dº</string>
+    <string name="probPlaceholder">%d %%</string><string name="temp_min">Min: %dº</string>
+    <string name="temp_max">Max: %dº</string>
+
 
     <!-- String de la App -->
     <string name="clear_day">Despejado</string>
@@ -30,6 +32,13 @@
     <string name="probabilidad">Probabilidad</string>
     <string name="diario">Pronostico Diario</string>
     <string name="horas">Pronostico por horas</string>
+    <string name="dia1">Lunes</string>
+    <string name="dia2">Martes</string>
+    <string name="dia3">Miercoles</string>
+    <string name="dia4">Jueves</string>
+    <string name="dia5">Viernes</string>
+    <string name="dia6">Sabado</string>
+    <string name="dia7">Domingo</string>
 
     <!-- String de configuracion -->
     <string name="locale">es</string>
@@ -40,4 +49,5 @@
     <string name="reintentar">¿Reintentar?</string>
     <string name="clima_diario">Clima diario</string>
     <string name="pronostico_para_la_semana">Pronostico para la semana</string>
+    <string name="Sin_Datos">Lo sentimos, no hay datos para mostrar</string>
 </resources>
