@@ -6,14 +6,18 @@
     <string name="grado">Grados</string>
     <string name="ciudadUndefined">No disponible</string>
     <string name="climaUndefined">Sin datos</string>
-    <string name="tempUndefined">0º</string>
+    <string name="tempUndefined">0º C</string>
     <string name="probUndefined">0%</string>
+    <string name="clima_diario">Clima diario</string>
+    <string name="pronostico_para_la_semana">Pronostico para la semana</string>
+    <string name="clima_horario">Clima por horas</string>
+    <string name="pronostico_horas">Pronostico para las proximas horas</string>
 
     <!-- String del procedimiento-->
-    <string name="tempPlaceholder">%dº</string>
-    <string name="probPlaceholder">%d %%</string><string name="temp_min">Min: %dº</string>
+    <string name="tempPlaceholder">%dº C</string>
+    <string name="probPlaceholder">%d %%</string>
+    <string name="temp_min">Min: %dº</string>
     <string name="temp_max">Max: %dº</string>
-
 
     <!-- String de la App -->
     <string name="clear_day">Despejado</string>
@@ -24,13 +28,13 @@
     <string name="partly_cloudy_day">Parcialmente nublado</string>
     <string name="partly_cloudy_night">Parcialmente nublada</string>
     <string name="rain">Lluvia</string>
-    <string name="sleet">Chubasco</string>
+    <string name="sleet">Llovizna</string>
     <string name="snow">Nevada</string>
     <string name="sunny">Soleado</string>
     <string name="wind">Ventoso</string>
     <string name="temperatura">Temperatura</string>
     <string name="probabilidad">Probabilidad</string>
-    <string name="diario">Pronostico Diario</string>
+    <string name="diario">Pronostico diario</string>
     <string name="horas">Pronostico por horas</string>
     <string name="dia1">Lunes</string>
     <string name="dia2">Martes</string>
@@ -47,7 +51,5 @@
     <!-- String de errores -->
     <string name="error">Ocurrio un error al intentar obtener la informacion.</string>
     <string name="reintentar">¿Reintentar?</string>
-    <string name="clima_diario">Clima diario</string>
-    <string name="pronostico_para_la_semana">Pronostico para la semana</string>
     <string name="Sin_Datos">Lo sentimos, no hay datos para mostrar</string>
 </resources>

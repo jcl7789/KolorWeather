@@ -12,7 +12,11 @@ operator fun JSONArray.iterator(): Iterator<JSONObject>
 
 fun ViewGroup.inflate(resource:Int): View = LayoutInflater.from(context).inflate(resource, this, false)
 
-fun View.displaySnack(mensaje:String, lenght_time: Int = Snackbar.LENGTH_INDEFINITE){
+fun View.displaySnack(mensaje:String, lenght_time: Int = Snackbar.LENGTH_INDEFINITE, f: Snackbar.() -> Unit){
     val snackbar = Snackbar.make(this, mensaje, lenght_time)
     snackbar.show()
+}
+
+fun Snackbar.action(mensaje: String, listener: (View)-> Unit){
+    setAction(mensaje, listener)
 }

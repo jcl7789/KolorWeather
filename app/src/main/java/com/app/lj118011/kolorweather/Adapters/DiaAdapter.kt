@@ -9,11 +9,11 @@ import com.app.lj118011.kolorweather.Modelos.Dia
 import com.app.lj118011.kolorweather.R
 import com.app.lj118011.kolorweather.XT.inflate
 
-class DayAdapter(val context: Context, val dataSource: ArrayList<Dia>): BaseAdapter(){
+class DiaAdapter(val context: Context, val dataSource: ArrayList<Dia>) : BaseAdapter() {
     override fun getView(position: Int, currentView: View?, parent: ViewGroup): View {
-        val viewHolder:ViewHolder
-        val view:View
-        if(currentView == null){
+        val viewHolder: ViewHolder
+        val view: View
+        if (currentView == null) {
             view = parent.inflate(R.layout.daily_item)
             viewHolder = ViewHolder(view)
             view.tag = viewHolder
@@ -42,7 +42,7 @@ class DayAdapter(val context: Context, val dataSource: ArrayList<Dia>): BaseAdap
         return dataSource.size
     }
 
-    private class ViewHolder(view: View){
+    private class ViewHolder(view: View) {
         val tv_dia = view.findViewById<TextView>(R.id.tv_dia)
         val tv_minTemp = view.findViewById<TextView>(R.id.tv_minTemp)
         val tv_maxTemp = view.findViewById<TextView>(R.id.tv_maxTemp)

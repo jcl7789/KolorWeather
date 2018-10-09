@@ -2,14 +2,14 @@ package com.app.lj118011.kolorweather.API
 
 import com.app.lj118011.kolorweather.Modelos.ClimaActual
 import com.app.lj118011.kolorweather.Modelos.Dia
+import com.app.lj118011.kolorweather.Modelos.Hora
 import com.app.lj118011.kolorweather.XT.iterator
 import org.json.JSONObject
 
-class JSONParser {
-
-    fun getClimaActualFromJson(response:JSONObject): ClimaActual {
-        val timezone = response.getString(TIMEZONE)
-        val currentJson = response.getJSONObject(ACTUAL)
+    fun getClimaActualFromJson(response: String): ClimaActual {
+        val responseJO = JSONObject(response)
+        val timezone = responseJO.getString(TIMEZONE)
+        val currentJson = responseJO.getJSONObject(ACTUAL)
         with(currentJson){
             return ClimaActual(
                     getString(ICONO),
@@ -21,8 +21,8 @@ class JSONParser {
 
     }
 
-    fun getClimaDiario(response: JSONObject):ArrayList<Dia>{
-        val dailyJson = response.getJSONObject(DIARIO)
+    fun getClimaDiarioFromJson(response: String):ArrayList<Dia>{
+        val dailyJson = JSONObject(response).getJSONObject(DIARIO)
         val dayJsonArray = dailyJson.getJSONArray(DATA)
         val dias = ArrayList<Dia>()
         for (dia in dayJsonArray){
@@ -33,4 +33,16 @@ class JSONParser {
         }
         return dias
     }
+
+fun getClimaHorarioFromJson(response: String):ArrayList<Hora>{
+    val hourlyJson = JSONObject(response).getJSONObject(POR_HORA)
+    val hoursJsonArray = hourlyJson.getJSONArray(DATA)
+    val horas = ArrayList<Hora>()
+    for (hora in hoursJsonArray){
+        val temp = hora.getDouble(TEMPERATURA)
+        val tiempo = hora.getLong(TIEMPO)
+        val precip = hora.getDouble(PROBABILIDAD_PRECIP)
+        horas.add(Hora(tiempo, temp, precip))
+    }
+    return horas
 }

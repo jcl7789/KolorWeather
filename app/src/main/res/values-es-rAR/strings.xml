@@ -6,10 +6,12 @@
     <string name="grado">Grados</string>
     <string name="ciudadUndefined">No disponible</string>
     <string name="climaUndefined">Sin datos</string>
-    <string name="tempUndefined">0º</string>
+    <string name="tempUndefined">0º C</string>
     <string name="probUndefined">0%</string>
     <string name="clima_diario">Clima diario</string>
     <string name="pronostico_para_la_semana">Pronostico para la semana</string>
+    <string name="clima_horario">Clima por horas</string>
+    <string name="pronostico_horas">Pronostico para las proximas horas</string>
 
     <!-- String del procedimiento-->
     <string name="tempPlaceholder">%dº C</string>

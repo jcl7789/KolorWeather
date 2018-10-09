@@ -12,7 +12,7 @@
     <string name="pronostico_para_la_semana">Summary of the week</string>
 
     <!-- String del procedimiento-->
-    <string name="tempPlaceholder">%dº C</string>
+    <string name="tempPlaceholder">%dº F</string>
     <string name="probPlaceholder">%d %%</string>
     <string name="temp_min">Min: %dº</string>
     <string name="temp_max">Max: %dº</string>
@@ -23,7 +23,7 @@
     <string name="cloudy">Cloudy</string>
     <string name="fog">Fog</string>
     <string name="partly_cloudy">Partly cloudy</string>
-    <string name="partly_cloudy_day">^Partly cloudy</string>
+    <string name="partly_cloudy_day">Partly cloudy</string>
     <string name="partly_cloudy_night">Partly cloudy night</string>
     <string name="rain">Rain</string>
     <string name="sleet">Sleet</string>
@@ -43,11 +43,13 @@
     <string name="dia7">Sunday</string>
 
     <!-- String de configuracion -->
-    <string name="locale">uk</string>
+    <string name="locale">en</string>
     <string name="units">auto</string>
 
     <!-- String de errores -->
     <string name="error">Sorry an error occurred.</string>
     <string name="reintentar">Retry?</string>
-    <string name="Sin_Datos">Lo sentimos, no hay datos para mostrar</string>
+    <string name="Sin_Datos">Sorry, we don\'t have any data to show</string>
+    <string name="clima_horario">Hourly Weather</string>
+    <string name="pronostico_horas">Summary of the Day</string>
 </resources>

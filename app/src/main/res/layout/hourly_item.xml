@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+
+    <TextView
+        android:id="@+id/tv_horario_hora"
+        style="@style/ListItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        tools:text="12:00" />
+
+    <TextView
+        android:id="@+id/tv_horario_temp"
+        style="@style/ListItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        tools:text="24º C" />
+
+    <TextView
+        android:id="@+id/tv_horario_prob"
+        style="@style/ListItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        tools:text="50%" />
+</LinearLayout>
