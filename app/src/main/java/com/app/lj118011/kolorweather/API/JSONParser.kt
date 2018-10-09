@@ -29,7 +29,8 @@ import org.json.JSONObject
             val min = dia.getDouble(TEMP_MINIMA)
             val tiempo = dia.getLong(TIEMPO)
             val max = dia.getDouble(TEMP_MAXIMA)
-            dias.add(Dia(tiempo, min, max))
+            val timeZone = dia.getString(TIMEZONE)
+            dias.add(Dia(tiempo, min, max, timeZone))
         }
         return dias
     }
@@ -42,7 +43,8 @@ fun getClimaHorarioFromJson(response: String):ArrayList<Hora>{
         val temp = hora.getDouble(TEMPERATURA)
         val tiempo = hora.getLong(TIEMPO)
         val precip = hora.getDouble(PROBABILIDAD_PRECIP)
-        horas.add(Hora(tiempo, temp, precip))
+        val timeZone = hora.getString(TIMEZONE)
+        horas.add(Hora(tiempo, temp, precip, timeZone))
     }
     return horas
 }

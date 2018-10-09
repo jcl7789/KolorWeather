@@ -5,17 +5,19 @@ import android.os.Parcelable
 import java.text.SimpleDateFormat
 import java.util.*
 
-data class Dia(val time:Long, val minTemp:Double, val maxTemp:Double): Parcelable {
+data class Dia(val time:Long, val minTemp:Double, val maxTemp:Double, val timeZone:String): Parcelable {
 
     constructor(parcel: Parcel) : this(
             parcel.readLong(),
             parcel.readDouble(),
-            parcel.readDouble()) {
+            parcel.readDouble(),
+            parcel.readString()) {
     }
 
     fun getTiempoFormateado():String{
         val formatter = SimpleDateFormat("EEEE", Locale.US)
         val fecha = Date(time * 1000)
+        formatter.timeZone = TimeZone.getTimeZone(timeZone)
         return formatter.format(fecha)
     }
 
@@ -23,6 +25,7 @@ data class Dia(val time:Long, val minTemp:Double, val maxTemp:Double): Parcelabl
         parcel.writeLong(time)
         parcel.writeDouble(minTemp)
         parcel.writeDouble(maxTemp)
+        parcel.writeString(timeZone)
     }
 
     override fun describeContents(): Int {
